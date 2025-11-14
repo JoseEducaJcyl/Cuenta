@@ -1,4 +1,18 @@
-package PACKAGE_NAME;
+public class CuentaCorriente extends Cuenta{
+    private boolean sobregiro;
 
-public class CuentaCorriente {
+    public CuentaCorriente(int numeroCuenta, String titular, double saldo, boolean sobregiro) {
+        super(numeroCuenta, titular, saldo);
+        this.sobregiro = sobregiro;
+    }
+
+    @Override
+    public String toString() {
+        return "CuentaCorriente{" +
+                "sobregiro=" + sobregiro +
+                ", numeroCuenta=" + numeroCuenta +
+                ", titular='" + titular + '\'' +
+                ", saldo=" + saldo +
+                '}';
+    }
 }
